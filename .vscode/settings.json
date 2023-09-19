@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "dprint.dprint",
+  "[lua]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "dprint.dprint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dprint.dprint"
+  }
+}

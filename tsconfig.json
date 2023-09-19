@@ -5,7 +5,8 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "bundler",
+    "noEmit": true,
+    "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "noUncheckedIndexedAccess": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -18,6 +19,6 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "checkJs": true,
-    "types": ["node", "bun-types"]
+    "types": ["bun-types"]
   }
 }
