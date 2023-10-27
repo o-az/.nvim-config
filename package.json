@@ -1,12 +1,15 @@
 {
+  "name": "nvim-config",
+  "description": "My Neovim & NvChad configuration",
+  "repository": "github:o-az/.nvim-config",
   "scripts": {
     "format": "bun --bun ./node_modules/@johnnymorganz/stylua-bin/run.js --config-path='.stylua.toml' --color='Always' --verbose ."
   },
   "dependencies": {
     "@johnnymorganz/stylua-bin": "^0.18.2",
-    "@types/node": "^20.6.2",
-    "bun-types": "^1.0.2",
-    "dprint": "^0.41.0"
+    "@types/node": "^20.8.9",
+    "bun-types": "^1.0.7",
+    "dprint": "^0.42.3"
   },
   "type": "module"
 }

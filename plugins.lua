@@ -39,10 +39,7 @@ local plugins = { -- Override plugin definition options
     event = "InsertEnter",
     config = function() require("better_escape").setup() end,
   }, -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
+
   -- All NvChad plugins are lazy-loaded by default
   -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
   -- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
@@ -69,7 +66,27 @@ local plugins = { -- Override plugin definition options
       },
     },
     opts = overrides.cmp,
-  }, -- END PLUGINS I INSTALLED
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = overrides.lazygit,
+  },
+  {
+    "NvChad/nvim-colorizer.lua",
+    config = function() require("colorizer").setup() end,
+  },
+  {
+    "Fildo7525/pretty_hover",
+    event = "CursorHold",
+    lazy = false,
+    -- enabled = true,
+    config = function() require("pretty_hover").setup() end,
+    opts = overrides.pretty_hover,
+  },
+  -- END PLUGINS I INSTALLED
 }
 
 return plugins

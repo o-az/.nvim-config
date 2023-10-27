@@ -68,7 +68,8 @@ M.nvimtree = {
 
 -- START PLUGINS I INSTALLED
 M.copilot = {
-  copilot_node_command = "/Users/o/.nvm/versions/node/v18.18.0/bin/node",
+  copilot_node_command = "/Users/o/.nvm/versions/node/v20.8.1/bin/node",
+  lazy = false,
   layout = {
     position = "right",
     ratio = 0.5,
@@ -110,6 +111,27 @@ M.copilot = {
 --         group_index = 2
 --     }}
 -- }
+
+-- M.lazygit = {
+--   cmd = {
+--     "LazyGit",
+--     "LazyGitConfig",
+--     "LazyGitFiles",
+--     "LazyGitHistory",
+--     "LazyGitMaps",
+--     "LazyGitStatus",
+--   },
+--   setup = function()
+--     vim.cmd [[
+--         nnoremap <leader>lg :LazyGit<CR>
+--       ]]
+--   end,
+-- }
+
+M.pretty_hover = {
+  toggle = true,
+}
+
 -- END PLUGINS I INSTALLED
 
 return M
