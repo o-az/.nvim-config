@@ -68,7 +68,7 @@ M.nvimtree = {
 
 -- START PLUGINS I INSTALLED
 M.copilot = {
-  copilot_node_command = "/Users/o/.nvm/versions/node/v20.8.1/bin/node",
+  copilot_node_command = "/Users/o/.nvm/versions/node/v20.10.0/bin/node",
   lazy = false,
   layout = {
     position = "right",

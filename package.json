@@ -6,10 +6,10 @@
     "format": "bun --bun ./node_modules/@johnnymorganz/stylua-bin/run.js --config-path='.stylua.toml' --color='Always' --verbose ."
   },
   "dependencies": {
-    "@johnnymorganz/stylua-bin": "^0.18.2",
-    "@types/node": "^20.8.9",
-    "bun-types": "^1.0.7",
-    "dprint": "^0.42.3"
+    "@johnnymorganz/stylua-bin": "^0.19.1",
+    "@types/node": "^20.10.4",
+    "bun-types": "^1.0.18",
+    "dprint": "^0.43.2"
   },
   "type": "module"
 }
